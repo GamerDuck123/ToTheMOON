@@ -1,0 +1,5 @@
+name: ToTheMoon
+main: com.gamerduck.ttm.ToTheMoonMain
+version: ${project.version}
+description: To the MOOONNNNN
+api-version: 1.17
