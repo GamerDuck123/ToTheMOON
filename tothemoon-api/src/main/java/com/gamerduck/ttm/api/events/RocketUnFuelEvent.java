@@ -13,14 +13,14 @@ public class RocketUnFuelEvent extends Event implements Cancellable {
 	Rocket rocket;
 	FuelType fuel;
 	Double fuelamount;
-	Player breaker;
+	Player fueler;
 	boolean cancel;
 	
-	public RocketUnFuelEvent(Rocket rocket, FuelType fuel, Double fuelamount, Player breaker) {
+	public RocketUnFuelEvent(Rocket rocket, FuelType fuel, Double fuelamount, Player fueler) {
 		this.rocket = rocket;
 		this.fuel = fuel;
 		this.fuelamount = fuelamount;
-		this.breaker = breaker;
+		this.fueler = fueler;
 	}
 	
 	public Rocket getRocket() {
@@ -35,8 +35,8 @@ public class RocketUnFuelEvent extends Event implements Cancellable {
 		return fuelamount;
 	}
 	
-	public Player getWhoBroke() {
-		return breaker;
+	public Player getWhoUnFueled() {
+		return fueler;
 	}
 	
 	@Override
