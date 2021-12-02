@@ -1,0 +1,6 @@
+{ 
+  "rocket-name": "Solid Fueled Rocket",
+  "rocket-type": "solid_fuel_rocket",
+  "max-fuel": 100,
+  "tier": 2
+}

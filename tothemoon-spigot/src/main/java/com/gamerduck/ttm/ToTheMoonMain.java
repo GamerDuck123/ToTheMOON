@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.gamerduck.ttm.api.ToTheMoonAPI;
 import com.gamerduck.ttm.storage.ConfigYAML;
+import com.gamerduck.ttm.storage.ConfigsJSON;
 import com.gamerduck.ttm.storage.Database;
 import com.gamerduck.ttm.storage.values;
 
@@ -13,6 +14,7 @@ public class ToTheMoonMain extends JavaPlugin {
 	static ToTheMoonMain instance;
     ConfigYAML configyaml;
 	FileConfiguration config;
+	ConfigsJSON configjson;
 	Database db;
 	@Override
 	public void onEnable() {
@@ -20,6 +22,7 @@ public class ToTheMoonMain extends JavaPlugin {
 		api = new ToTheMoonAPI(this);
 		configyaml = new ConfigYAML(this);
 		config = configyaml.getConfig();
+		configjson = new ConfigsJSON(this);
 		values.load(config);
 		if (values.MYSQL_ENABLED) {
 			try {db = new Database(this, 

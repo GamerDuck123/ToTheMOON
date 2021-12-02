@@ -4,6 +4,5 @@ public enum RocketTier {
 	ONE(),
 	TWO(),
 	THREE(),
-	FOUR(),
-	FIVE();
+	FOUR();
 }

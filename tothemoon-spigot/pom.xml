@@ -29,7 +29,12 @@
         <filtering>true</filtering>
         <directory>src/main/resources</directory>
         <includes>
+          <include>config.yml</include>
           <include>plugin.yml</include>
+          <include>rocketsettings/ion_rocket.json</include>
+          <include>rocketsettings/liquid_fuel_rocket.json</include>
+          <include>rocketsettings/plasma_rocket.json</include>
+          <include>rocketsettings/solid_fuel_rocket.json</include>
         </includes>
       </resource>
     </resources>

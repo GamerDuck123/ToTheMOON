@@ -6,22 +6,22 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 import com.gamerduck.ttm.api.objects.Planet;
-import com.gamerduck.ttm.api.objects.Rocket;
+import com.gamerduck.ttm.api.objects.PlayerRocket;
 
 public class RocketLandEvent extends Event implements Cancellable {
 
-	Rocket rocket;
+	PlayerRocket rocket;
 	Location loc;
 	Planet planet;
 	boolean cancel;
 	
-	public RocketLandEvent(Rocket rocket, Location loc, Planet planet) {
+	public RocketLandEvent(PlayerRocket rocket, Location loc, Planet planet) {
 		this.rocket = rocket;
 		this.loc = loc;
 		this.planet = planet;
 	}
 	
-	public Rocket getRocket() {
+	public PlayerRocket getRocket() {
 		return rocket;
 	}
 	

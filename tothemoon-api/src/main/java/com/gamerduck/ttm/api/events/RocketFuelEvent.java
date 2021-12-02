@@ -6,24 +6,24 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 import com.gamerduck.ttm.api.enums.FuelType;
-import com.gamerduck.ttm.api.objects.Rocket;
+import com.gamerduck.ttm.api.objects.PlayerRocket;
 
 public class RocketFuelEvent extends Event implements Cancellable {
 
-	Rocket rocket;
+	PlayerRocket rocket;
 	FuelType fuel;
 	Double fuelamount;
 	Player fueler;
 	boolean cancel;
 	
-	public RocketFuelEvent(Rocket rocket, FuelType fuel, Double fuelamount, Player fueler) {
+	public RocketFuelEvent(PlayerRocket rocket, FuelType fuel, Double fuelamount, Player fueler) {
 		this.rocket = rocket;
 		this.fuel = fuel;
 		this.fuelamount = fuelamount;
 		this.fueler = fueler;
 	}
 	
-	public Rocket getRocket() {
+	public PlayerRocket getRocket() {
 		return rocket;
 	}
 	

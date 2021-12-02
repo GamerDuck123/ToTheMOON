@@ -1,0 +1,6 @@
+{ 
+  "rocket-name": "Liquid Fueled Rocket",
+  "rocket-type": "liquid_fuel_rocket",
+  "max-fuel": 100,
+  "tier": 1
+}

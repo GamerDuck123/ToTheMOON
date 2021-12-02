@@ -6,22 +6,22 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import com.gamerduck.ttm.api.objects.Rocket;
+import com.gamerduck.ttm.api.objects.PlayerRocket;
 
 public class RocketBreakEvent extends Event implements Cancellable {
 
-	Rocket rocket;
+	PlayerRocket rocket;
 	Location loc;
 	Player breaker;
 	boolean cancel;
 	
-	public RocketBreakEvent(Rocket rocket, Location loc, Player breaker) {
+	public RocketBreakEvent(PlayerRocket rocket, Location loc, Player breaker) {
 		this.rocket = rocket;
 		this.loc = loc;
 		this.breaker = breaker;
 	}
 	
-	public Rocket getRocket() {
+	public PlayerRocket getRocket() {
 		return rocket;
 	}
 	

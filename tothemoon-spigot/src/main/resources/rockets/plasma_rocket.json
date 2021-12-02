@@ -1,0 +1,6 @@
+{ 
+  "rocket-name": "Plasma Rocket",
+  "rocket-type": "plasma_rocket",
+  "max-fuel": 100,
+  "tier": 4
+}

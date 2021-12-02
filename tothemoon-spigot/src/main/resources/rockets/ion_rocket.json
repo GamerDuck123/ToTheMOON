@@ -1,0 +1,6 @@
+{ 
+  "rocket-name": "Ion Rocket",
+  "rocket-type": "ion_rocket",
+  "max-fuel": 100,
+  "tier": 3
+}

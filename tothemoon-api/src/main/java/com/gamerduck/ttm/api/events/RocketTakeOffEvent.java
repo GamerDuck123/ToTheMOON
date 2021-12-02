@@ -6,18 +6,18 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 import com.gamerduck.ttm.api.objects.Planet;
-import com.gamerduck.ttm.api.objects.Rocket;
+import com.gamerduck.ttm.api.objects.PlayerRocket;
 
 public class RocketTakeOffEvent extends Event implements Cancellable {
 
-	Rocket rocket;
+	PlayerRocket rocket;
 	Location oldloc;
 	Location newloc;
 	Planet oldplanet;
 	Planet newplanet;
 	boolean cancel;
 	
-	public RocketTakeOffEvent(Rocket rocket, Location oldloc, Location newloc, Planet oldplanet, Planet newplanet) {
+	public RocketTakeOffEvent(PlayerRocket rocket, Location oldloc, Location newloc, Planet oldplanet, Planet newplanet) {
 		this.rocket = rocket;
 		this.oldloc = oldloc;
 		this.newloc = newloc;
@@ -25,7 +25,7 @@ public class RocketTakeOffEvent extends Event implements Cancellable {
 		this.newplanet = newplanet;
 	}
 	
-	public Rocket getRocket() {
+	public PlayerRocket getRocket() {
 		return rocket;
 	}
 	

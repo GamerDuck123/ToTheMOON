@@ -4,6 +4,5 @@ public enum PlanetTier {
 	ONE(),
 	TWO(),
 	THREE(),
-	FOUR(),
-	FIVE();
+	FOUR();
 }

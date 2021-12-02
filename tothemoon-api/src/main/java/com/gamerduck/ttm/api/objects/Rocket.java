@@ -16,11 +16,7 @@ public class Rocket {
 	Location loc;
 	RocketType type;
 	RocketTier tier;
-	public Rocket(Player owner, ArrayList<Player> passengers, RocketID id, Location loc, RocketType type, RocketTier tier) {
-		this.owner = owner;
-		this.passengers = passengers;
-		this.id = id;
-		this.loc = loc;
+	public Rocket(RocketType type, RocketTier tier, double maxfuel) {
 		this.type = type;
 		this.tier = tier;
 	} 
